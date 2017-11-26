@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Charts
 import BulletinBoard
 
 class ViewController: UIViewController {
@@ -27,11 +28,59 @@ class ViewController: UIViewController {
     
     var manager: WatchManager!
     
+    @IBOutlet weak var stepChart: LineChartView!
+    @IBOutlet weak var sleepChart: BarChartView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         manager = WatchManager.shared
+        
+        // Fake step data
+        let data = LineChartDataSet(values: [ChartDataEntry(x: 0, y: 0), ChartDataEntry(x: 100, y: 73), ChartDataEntry(x: 200, y: 109), ChartDataEntry(x: 300, y: 322), ChartDataEntry(x: 400, y: 421), ChartDataEntry(x: 700, y: 544), ChartDataEntry(x: 900, y: 620)], label: "Steps")
+        data.axisDependency = .left
+        
+        data.setColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+        data.lineWidth = 5
+        
+        data.drawCirclesEnabled = false
+        data.drawFilledEnabled = true
+        
+        data.drawCirclesEnabled = true
+        data.circleHoleColor = #colorLiteral(red: 0.9882352941, green: 0.2784313725, blue: 0.1176470588, alpha: 1)
+        data.setCircleColor(#colorLiteral(red: 0.9882352941, green: 0.2784313725, blue: 0.1176470588, alpha: 1))
+        data.circleRadius = 4
+        
+        data.fillColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        data.fillAlpha = 1
+        
+        stepChart.data = LineChartData(dataSets: [data])
+        
+        stepChart.xAxis.drawGridLinesEnabled = false
+        stepChart.backgroundColor = #colorLiteral(red: 0.407795608, green: 0.4078705311, blue: 0.4077909291, alpha: 1)
+        stepChart.drawGridBackgroundEnabled = false
+        
+        stepChart.drawBordersEnabled = false
+        
+        stepChart.chartDescription?.enabled = false
+        
+        stepChart.pinchZoomEnabled = false
+        stepChart.dragEnabled = true
+        stepChart.setScaleEnabled(false)
+        
+        stepChart.legend.enabled = false
+        stepChart.xAxis.enabled = false
+        
+        let leftAxis = stepChart.leftAxis
+        leftAxis.axisMinimum = 0
+        leftAxis.drawAxisLineEnabled = false
+        leftAxis.drawGridLinesEnabled = false
+        leftAxis.drawLabelsEnabled = false
+        
+        stepChart.rightAxis.enabled = false
+        
+        stepChart.xAxis.axisMaximum = 1440
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -52,7 +101,7 @@ class ViewController: UIViewController {
         start.image = #imageLiteral(resourceName: "watch")
         start.descriptionText = "Setup your new Pebble Watch!"
         start.actionButtonTitle = "Find Watch"
-        start.interfaceFactory.tintColor = #colorLiteral(red: 0.9869872928, green: 0.2803094089, blue: 0.1182710156, alpha: 1)
+        start.interfaceFactory.tintColor = #colorLiteral(red: 0.9882352941, green: 0.2784313725, blue: 0.1176470588, alpha: 1)
         start.actionHandler = { item in
             // Show the pair page:
             self.bulletinManager.dismissBulletin(animated: true)
@@ -130,6 +179,11 @@ class ViewController: UIViewController {
         if segue.destination is ScanTableViewController {
             let destination = segue.destination as! ScanTableViewController
             destination.superview = self
+        }
+        
+        if segue.destination is TesterViewController {
+            let destination = segue.destination as! TesterViewController
+            destination.manager = manager
         }
     }
 }

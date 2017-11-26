@@ -10,6 +10,7 @@
 		13DC38DBD05A9789BDFDC95A /* Pods_RebbleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38149F0DD8DAB1975B73BA7D /* Pods_RebbleUITests.framework */; };
 		9015F525A457D519B3D99904 /* Pods_RebbleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B317FA782521454907662331 /* Pods_RebbleTests.framework */; };
 		92176154366B6EBEA488B1B2 /* Pods_Rebble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7637A5C6FD77DA7592E9F4BD /* Pods_Rebble.framework */; };
+		B50265D91FCB5ECC007C800A /* TesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50265D81FCB5ECC007C800A /* TesterViewController.swift */; };
 		B5B561FF1F857DEE0032129C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B561FE1F857DEE0032129C /* AppDelegate.swift */; };
 		B5B562041F857DEE0032129C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B562021F857DEE0032129C /* Main.storyboard */; };
 		B5B562061F857DEE0032129C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B562051F857DEE0032129C /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		7637A5C6FD77DA7592E9F4BD /* Pods_Rebble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rebble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0F49B0F63EF6AD14E55F3A /* Pods-RebbleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RebbleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RebbleUITests/Pods-RebbleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B317FA782521454907662331 /* Pods_RebbleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RebbleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B50265D81FCB5ECC007C800A /* TesterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterViewController.swift; sourceTree = "<group>"; };
 		B5B561FB1F857DEE0032129C /* Rebble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rebble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B561FE1F857DEE0032129C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5B562031F857DEE0032129C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				B5B561FE1F857DEE0032129C /* AppDelegate.swift */,
 				B5B5622F1F8584FE0032129C /* ScanTableViewController.swift */,
 				B5B562391F85A5540032129C /* ViewController.swift */,
+				B50265D81FCB5ECC007C800A /* TesterViewController.swift */,
 				B5B562021F857DEE0032129C /* Main.storyboard */,
 				B5B562051F857DEE0032129C /* Assets.xcassets */,
 				B5B562071F857DEE0032129C /* LaunchScreen.storyboard */,
@@ -481,6 +484,7 @@
 				B5B562381F85A3610032129C /* WatchCharacteristics.swift in Sources */,
 				B5B5623A1F85A5540032129C /* ViewController.swift in Sources */,
 				B5B562301F8584FE0032129C /* ScanTableViewController.swift in Sources */,
+				B50265D91FCB5ECC007C800A /* TesterViewController.swift in Sources */,
 				B5B562321F8592520032129C /* WatchRequest.swift in Sources */,
 				B5B561FF1F857DEE0032129C /* AppDelegate.swift in Sources */,
 				B5B5622D1F8580420032129C /* WatchManager.swift in Sources */,
