@@ -1,0 +1,1257 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08BD1F3F05A2E9349ED0AC46F27E63DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92885B1914DB641E83AE437F90DF942F /* Foundation.framework */; };
+		0D916333EA308F4075A94DE801AE20E4 /* BulletinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64143F99A3413368EA852A030C021B88 /* BulletinManager.swift */; };
+		0E775F39FA3270D673437CE50F59EDD3 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838421D0CB4A3E4399DAABF63EFE68D /* Event.swift */; };
+		0FC735B80D9218D3E289D59129F5AEBF /* ConnectionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED97B37731E19203EBFDCC6AA2D48C7 /* ConnectionResult.swift */; };
+		173E5A0E06569943EDC9501DE85B9ADC /* BulletinBoard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3744D4E31211A7034CE555FBB02B9 /* BulletinBoard-dummy.m */; };
+		1836782B2D57DA147E1438A88BF53C6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92885B1914DB641E83AE437F90DF942F /* Foundation.framework */; };
+		188C92E3C27E49BBA9EC6CAA4CD0E699 /* BulletinBoard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDDBCB69D58BE268EAE42505B1592DAE /* BulletinBoard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20E498AF5569E632AB9F676381EC3EB0 /* CBManagerState+ReturnString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E8503C5A97370E707C882B301456A /* CBManagerState+ReturnString.swift */; };
+		22C9391BF14220C43CF79C515CB798EF /* DisconnectionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8126B69C8913ABF1FFD043BA642D838 /* DisconnectionResult.swift */; };
+		243E789FBAA67080C1F961FC730581D5 /* CBPeripheralState+ReturnString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580A352DE9F320A03D954D3B21FC23E9 /* CBPeripheralState+ReturnString.swift */; };
+		2ACF3F64E931E18AA87F01E6CBE9E843 /* Integer+Transferable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF298395E4ECB1E7844B72B73CAFC8 /* Integer+Transferable.swift */; };
+		2E88B715F1098F1709C7D450E5FAA1EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92885B1914DB641E83AE437F90DF942F /* Foundation.framework */; };
+		37EFCED807D0C845744FC0FB0F71816F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92885B1914DB641E83AE437F90DF942F /* Foundation.framework */; };
+		387D266A81CFCFC670E473D7CFD66FD7 /* HighlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0F00CA7EA337E6545D8B2C56F9A61 /* HighlightButton.swift */; };
+		3B9F7D0DD226BFCAAD76FF3CB8A5942D /* Queueable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73243E5816BB365E0C7F84F025F69F4B /* Queueable.swift */; };
+		3CF13D6623F49E741506E4D98C4133AD /* DiscoveryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E68BE863C7EC7DE4225B2F96CC9401 /* DiscoveryResult.swift */; };
+		3FE4957999A9514F40E462217D994526 /* WriteCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF96815D8E2E1535F2B9EEA67314CB6 /* WriteCharacteristic.swift */; };
+		3FEA8C4F88DB26A19E7E890C598A7BA7 /* CharacteristicIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E76C691FA288CF08E04A62BFB942F88 /* CharacteristicIdentifier.swift */; };
+		42472554622FB9CB7ED51C90BE1311EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92885B1914DB641E83AE437F90DF942F /* Foundation.framework */; };
+		44122911511E2017C77BC590BCB307A4 /* ReadCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE092C8944F6AEE2358E2D014890685 /* ReadCharacteristic.swift */; };
+		4AAAC4C06CAABA4F5AB2EE6610AFF16D /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596CF2B568F643995940D876DDB42C24 /* Error.swift */; };
+		4C60A033EFEC16D28BB8E8D5A559A2A1 /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42564FAAD490E489C491E9B8417995BB /* DimmingPresentationController.swift */; };
+		5324CE83E3B537E3019F9B2B603FED45 /* Scan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A1371D9CF5C95B65AB8E63CC5E12E8 /* Scan.swift */; };
+		5AB4828465C1399CBA169ED53353171D /* Pods-RebbleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 294BC08D1E4B9986DE8BBFAABE110E49 /* Pods-RebbleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ACFE53A23E555D9EE91B657FCA39582 /* PageBulletinItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A06651D48542F0BC62155EDC210F132 /* PageBulletinItem.swift */; };
+		5AE592764B14BEFAD679CDC347EFABCD /* BackgroundRestoreMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC1AEA2EC1A1CA7219B0CA3D09CE3DC /* BackgroundRestoreMode.swift */; };
+		5D3196BCCB6BFAF5B2EB55F3A1A0EED7 /* CBService+FindCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DCCFAD6ABB65F26E24E486F5656CF6 /* CBService+FindCharacteristic.swift */; };
+		6E3FE5DB584A5EA0B1C443900DE08E92 /* String+Transferable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F89E1F07D2CB3EBC60E72EC42FE38D /* String+Transferable.swift */; };
+		7444EB0EAD9F90B7D1C598187DB8FF88 /* BulletinInterfaceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94601C8B51C99CA60BF1B0B5379E075 /* BulletinInterfaceFactory.swift */; };
+		8381F760CC9CD02D9759DFB3BAF1D90C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D923F5C1052B50CA1883CA42419E48AC /* UIKit.framework */; };
+		8405C749E15A50919205A422473B9BCB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA159B0CC73805F995F435D691595B2 /* SystemConfiguration.framework */; };
+		85EE9AD9FA25259A9AD90EE435DFA3FF /* Bluejay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E25E55E76AEE1A8B3647275874DBCC03 /* Bluejay-dummy.m */; };
+		864FDE13D49F00D2717CAF31946282A3 /* ConnectionObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039A0F5397ED8A3DB808F258D774DDE0 /* ConnectionObserver.swift */; };
+		8B548DA0991A148F2243254A69BC0D87 /* ListenRestorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E4DEA407973ADA8A640A020F07EBCC /* ListenRestorer.swift */; };
+		8BB5FF92C3CCF323C8D8DFB8F0670982 /* ServiceIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344425C9036B52975453E6B663E782D8 /* ServiceIdentifier.swift */; };
+		8D5DA9B1129F96725CD7E96D33811572 /* BulletinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E4572B4AC1F81967E124695B4FB3DD /* BulletinViewController.swift */; };
+		8DBEB862219BD9902DB05B3563C777E1 /* DiscoverCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1682D17AD8CD3F7CA3554EAC91AD0E /* DiscoverCharacteristic.swift */; };
+		98E55CD22F342C16491201AF2790D31A /* CBPeripheral+FindService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E906F566C7DB394365D62EDC6E331B /* CBPeripheral+FindService.swift */; };
+		9A59B8AF14C182700BFBEDBEACF2FE26 /* DataPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE643378202E06B3CC5470D3FEB4E37 /* DataPadding.swift */; };
+		9EC192A85AB519466B425C0E1244F67B /* Pods-RebbleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD8B8D996DA80B6280687A7B0742A4A /* Pods-RebbleTests-dummy.m */; };
+		9F45138DC7BB97316B8C6047C220D46F /* Data+Sendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6A4A3CC7E3187461B1E8ED05E9BE8 /* Data+Sendable.swift */; };
+		A0B02726F0E31986D88EB899B170F1EB /* BulletinItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2596AE7ADC87E9C58F46B4E4508211DC /* BulletinItem.swift */; };
+		A14594A71D9EEED075A6C1C4171F401B /* ScanAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A1041FFC1180BE123E6FEE3C7C2F20 /* ScanAction.swift */; };
+		A24B2656A8A64710765014D07EBC5922 /* SynchronizedPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38085BDA308819129E815C7276F29027 /* SynchronizedPeripheral.swift */; };
+		A4B5654A2D279E6551C5E0F0983447F8 /* Pods-RebbleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BE5034C248E18EF4D9F7D2CF39EA17 /* Pods-RebbleUITests-dummy.m */; };
+		A85E00B073B353EB54905E45E83221AE /* Data+Extractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E8FE84F39C09834259A038745282FF /* Data+Extractable.swift */; };
+		A8C11A91FCC2580BAC53D68CDA31CFAC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A79FBFEA2AD96C21A4EB13E179107 /* Constant.swift */; };
+		A9F8D96F8C8300FDABBA0EED564C915E /* Peripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4394DF2CB3ABADBFB597D1D8099F0B /* Peripheral.swift */; };
+		AAA2AD523060056297620597F6D19A01 /* Disconnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3AD6E790722C725172D017949CA648 /* Disconnection.swift */; };
+		AAF89551D6DE2699D2AD359FAF1DD2A5 /* Pods-Rebble-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84543F8D051A1C64471869791CB2AF50 /* Pods-Rebble-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD1D1BB78F9F8817A7C924CA05A83ABF /* QueueableState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371B826BB801E78C6856DF56721E6B9 /* QueueableState.swift */; };
+		ADE56D5E09E3B760B7A46A342892476B /* Bluejay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37E6D7EDF1E42055F7CF7D1CB0F18D1B /* Bluejay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1AA9D880E87DC12A9A2C605F5B3806F /* Bluejay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E53E3EFD210532D656417EE1892E84C /* Bluejay.swift */; };
+		BB1552888C0571E7746A5FAB24679355 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0E72DC2BC64D776B9990394A6FA8D7 /* Queue.swift */; };
+		C02FAE802561E801A726ABEFF87DB0EC /* ScanDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594A3ED8FA044032A0E59C9F7B74BD1D /* ScanDiscovery.swift */; };
+		C5AB37DD93F1A0AD5D357BDCCEDAFC08 /* Pods-RebbleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 434E77A5757C4E4AC428F5FAE64B1ADA /* Pods-RebbleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C93CB0868A55B53FBF46E5EA2B2031B5 /* ListenAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7706B62C1424B0AEC2905283F066A371 /* ListenAction.swift */; };
+		CEF5323B4E0F5ACF70DEAAD331CC29B8 /* RunResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952E81C6942897D6470999F63BD6307 /* RunResult.swift */; };
+		CFBB1B0DECA56C1A38E06B3B498F6A87 /* Sendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711C88B017A78FC6CE571F8EA6F04330 /* Sendable.swift */; };
+		D0ED0916FC17DDA65849964886FE7109 /* DiscoverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B891E91E64B02379EE420EDA40C0AC6 /* DiscoverService.swift */; };
+		D288FA2704F9F1DBE6FEE5824264BCAA /* ListenCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE762953C9D4243B6E7C8C76AAED479 /* ListenCharacteristic.swift */; };
+		DC90B59E31F1C4F02FAD5C1A96A394DB /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3947E3B7EC0CD3614C5E29E892F0B6 /* Operation.swift */; };
+		DEE43FD8268D2A68DAAB127534272384 /* RSSIObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF10FC9E518A044AC06013763E35FEB /* RSSIObserver.swift */; };
+		E167049E337E4009069D21762D51EE47 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AFA1C929AD65987B8991F370A35B58 /* Connection.swift */; };
+		E377E9B31975DCD4B5523EC16E75C38E /* Pods-Rebble-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D62CCA1219451D6EA671C402FDEB74CF /* Pods-Rebble-dummy.m */; };
+		E545186AB5B419636FCC7211CD2CB7FF /* Receivable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511E370664AACF53AA92AF3A0D414A9 /* Receivable.swift */; };
+		E9801260FF8CD202C9D96FB563154F8E /* Bluejay.h in Headers */ = {isa = PBXBuildFile; fileRef = 3203078B3365BBFE82A63A4090370983 /* Bluejay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBDDD36DE6CBA2A8A2BFE7F340D49D3C /* WriteResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6ECFF8A5CD8BD22FADB576DB030D8FC /* WriteResult.swift */; };
+		ECF46F18B138065A3A98CA219637AFE8 /* ReadResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236A8BB3DACCA2828FFFA5D35ABE9770 /* ReadResult.swift */; };
+		F351971A05F4F0F3FB48C782404E895B /* PeripheralIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C489D3DC0F83E623BF05BB4C55CAFFD /* PeripheralIdentifier.swift */; };
+		F821A9841BC52FB7C20BC76C66357598 /* ListenCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A606515338D7CA2A8F4F03994B143 /* ListenCache.swift */; };
+		FD110683B3A002A84E24782D413E7A78 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978FEEC7FDC27819F4478D9711FD5A5 /* ContainerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1595BCD4E7D14425759441A52E8CFBD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8840F30F6735800938FA9ADC439E9E0;
+			remoteInfo = Bluejay;
+		};
+		656204891E382B6DFBA46C49DF23A534 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19787C8321575BC730A8F2665B598A07;
+			remoteInfo = BulletinBoard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		039A0F5397ED8A3DB808F258D774DDE0 /* ConnectionObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionObserver.swift; path = Bluejay/Bluejay/ConnectionObserver.swift; sourceTree = "<group>"; };
+		0CA159B0CC73805F995F435D691595B2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		0D8FE6DC63B0989EBB68AF571525AC4E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E76C691FA288CF08E04A62BFB942F88 /* CharacteristicIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CharacteristicIdentifier.swift; path = Bluejay/Bluejay/CharacteristicIdentifier.swift; sourceTree = "<group>"; };
+		12A1371D9CF5C95B65AB8E63CC5E12E8 /* Scan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scan.swift; path = Bluejay/Bluejay/Scan.swift; sourceTree = "<group>"; };
+		13E4DEA407973ADA8A640A020F07EBCC /* ListenRestorer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListenRestorer.swift; path = Bluejay/Bluejay/ListenRestorer.swift; sourceTree = "<group>"; };
+		1588AE6CCD9B4B44CA0E1616BA9689F9 /* BulletinBoard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BulletinBoard.modulemap; sourceTree = "<group>"; };
+		16A1041FFC1180BE123E6FEE3C7C2F20 /* ScanAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScanAction.swift; path = Bluejay/Bluejay/ScanAction.swift; sourceTree = "<group>"; };
+		16E68BE863C7EC7DE4225B2F96CC9401 /* DiscoveryResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiscoveryResult.swift; path = Bluejay/Bluejay/DiscoveryResult.swift; sourceTree = "<group>"; };
+		1B891E91E64B02379EE420EDA40C0AC6 /* DiscoverService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiscoverService.swift; path = Bluejay/Bluejay/DiscoverService.swift; sourceTree = "<group>"; };
+		1C489D3DC0F83E623BF05BB4C55CAFFD /* PeripheralIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeripheralIdentifier.swift; path = Bluejay/Bluejay/PeripheralIdentifier.swift; sourceTree = "<group>"; };
+		1E4394DF2CB3ABADBFB597D1D8099F0B /* Peripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Peripheral.swift; path = Bluejay/Bluejay/Peripheral.swift; sourceTree = "<group>"; };
+		20DCCFAD6ABB65F26E24E486F5656CF6 /* CBService+FindCharacteristic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CBService+FindCharacteristic.swift"; path = "Bluejay/Bluejay/CBService+FindCharacteristic.swift"; sourceTree = "<group>"; };
+		236A8BB3DACCA2828FFFA5D35ABE9770 /* ReadResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReadResult.swift; path = Bluejay/Bluejay/ReadResult.swift; sourceTree = "<group>"; };
+		2465EB6C5700C67580AE93032337D8A4 /* Pods-RebbleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RebbleUITests.modulemap"; sourceTree = "<group>"; };
+		2596AE7ADC87E9C58F46B4E4508211DC /* BulletinItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulletinItem.swift; path = Sources/BulletinItem.swift; sourceTree = "<group>"; };
+		294BC08D1E4B9986DE8BBFAABE110E49 /* Pods-RebbleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RebbleTests-umbrella.h"; sourceTree = "<group>"; };
+		30AFA1C929AD65987B8991F370A35B58 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Bluejay/Bluejay/Connection.swift; sourceTree = "<group>"; };
+		3203078B3365BBFE82A63A4090370983 /* Bluejay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bluejay.h; path = Bluejay/Bluejay/Bluejay.h; sourceTree = "<group>"; };
+		344425C9036B52975453E6B663E782D8 /* ServiceIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceIdentifier.swift; path = Bluejay/Bluejay/ServiceIdentifier.swift; sourceTree = "<group>"; };
+		35F16E84597CB280E1328F048BC51A17 /* Bluejay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bluejay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E6D7EDF1E42055F7CF7D1CB0F18D1B /* Bluejay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bluejay-umbrella.h"; sourceTree = "<group>"; };
+		38085BDA308819129E815C7276F29027 /* SynchronizedPeripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedPeripheral.swift; path = Bluejay/Bluejay/SynchronizedPeripheral.swift; sourceTree = "<group>"; };
+		3B503D2947B7F494C19346F268D24788 /* Pods-RebbleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RebbleTests.modulemap"; sourceTree = "<group>"; };
+		42564FAAD490E489C491E9B8417995BB /* DimmingPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DimmingPresentationController.swift; path = Sources/Support/DimmingPresentationController.swift; sourceTree = "<group>"; };
+		434E77A5757C4E4AC428F5FAE64B1ADA /* Pods-RebbleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RebbleUITests-umbrella.h"; sourceTree = "<group>"; };
+		46892EE855D44650065B3ABC49E1F98B /* Pods-RebbleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RebbleTests-resources.sh"; sourceTree = "<group>"; };
+		48923C355C958F1A0F4A97359399CBC6 /* Pods-RebbleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RebbleUITests-frameworks.sh"; sourceTree = "<group>"; };
+		4A19338FBDE377B043192865B073EF0F /* Pods-RebbleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RebbleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4CB72EF6EE4D2E8442FB3559587CFC05 /* Pods-RebbleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RebbleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4EE643378202E06B3CC5470D3FEB4E37 /* DataPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataPadding.swift; path = Bluejay/Bluejay/DataPadding.swift; sourceTree = "<group>"; };
+		503FC312D5A827288094A29ABAF41236 /* Pods-Rebble.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Rebble.modulemap"; sourceTree = "<group>"; };
+		55BC19FF9E4D0DEE0F10509BC87C40B1 /* BulletinBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BulletinBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		580A352DE9F320A03D954D3B21FC23E9 /* CBPeripheralState+ReturnString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CBPeripheralState+ReturnString.swift"; path = "Bluejay/Bluejay/CBPeripheralState+ReturnString.swift"; sourceTree = "<group>"; };
+		59167D29B9E5699E7C3DCA77AD75677E /* Pods-RebbleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RebbleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		594A3ED8FA044032A0E59C9F7B74BD1D /* ScanDiscovery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScanDiscovery.swift; path = Bluejay/Bluejay/ScanDiscovery.swift; sourceTree = "<group>"; };
+		596CF2B568F643995940D876DDB42C24 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Bluejay/Bluejay/Error.swift; sourceTree = "<group>"; };
+		5D3AD6E790722C725172D017949CA648 /* Disconnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Disconnection.swift; path = Bluejay/Bluejay/Disconnection.swift; sourceTree = "<group>"; };
+		5E4E8503C5A97370E707C882B301456A /* CBManagerState+ReturnString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CBManagerState+ReturnString.swift"; path = "Bluejay/Bluejay/CBManagerState+ReturnString.swift"; sourceTree = "<group>"; };
+		5E53E3EFD210532D656417EE1892E84C /* Bluejay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bluejay.swift; path = Bluejay/Bluejay/Bluejay.swift; sourceTree = "<group>"; };
+		6371B826BB801E78C6856DF56721E6B9 /* QueueableState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueueableState.swift; path = Bluejay/Bluejay/QueueableState.swift; sourceTree = "<group>"; };
+		64143F99A3413368EA852A030C021B88 /* BulletinManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulletinManager.swift; path = Sources/BulletinManager.swift; sourceTree = "<group>"; };
+		692103FE8C12D40876A16E05322AC1C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A06651D48542F0BC62155EDC210F132 /* PageBulletinItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageBulletinItem.swift; path = Sources/PageBulletinItem.swift; sourceTree = "<group>"; };
+		6DE092C8944F6AEE2358E2D014890685 /* ReadCharacteristic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReadCharacteristic.swift; path = Bluejay/Bluejay/ReadCharacteristic.swift; sourceTree = "<group>"; };
+		6FDE972F8B6E06BC4A926298B758212F /* Pods_Rebble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rebble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		711C88B017A78FC6CE571F8EA6F04330 /* Sendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sendable.swift; path = Bluejay/Bluejay/Sendable.swift; sourceTree = "<group>"; };
+		72CF298395E4ECB1E7844B72B73CAFC8 /* Integer+Transferable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Integer+Transferable.swift"; path = "Bluejay/Bluejay/Integer+Transferable.swift"; sourceTree = "<group>"; };
+		73243E5816BB365E0C7F84F025F69F4B /* Queueable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Queueable.swift; path = Bluejay/Bluejay/Queueable.swift; sourceTree = "<group>"; };
+		7706B62C1424B0AEC2905283F066A371 /* ListenAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListenAction.swift; path = Bluejay/Bluejay/ListenAction.swift; sourceTree = "<group>"; };
+		77E27EEF03C00D6BC3B1490D809ACF26 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78666C0F9F978B705E35F4816719F613 /* Pods-RebbleUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RebbleUITests-resources.sh"; sourceTree = "<group>"; };
+		7E4860F765E45F33991DE9464DEB99BE /* Pods-RebbleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RebbleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7EF4EB7292774687C970EF3A98462CFD /* BulletinBoard-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BulletinBoard-prefix.pch"; sourceTree = "<group>"; };
+		836FC67F422D77AFA9F4E84FD6C3BBF2 /* Pods-Rebble.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rebble.release.xcconfig"; sourceTree = "<group>"; };
+		83D63A159B1267C725D2FF05423C9C27 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84543F8D051A1C64471869791CB2AF50 /* Pods-Rebble-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Rebble-umbrella.h"; sourceTree = "<group>"; };
+		8511E370664AACF53AA92AF3A0D414A9 /* Receivable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Receivable.swift; path = Bluejay/Bluejay/Receivable.swift; sourceTree = "<group>"; };
+		8AD82DE43E174E61A25433DE3AAC6E8F /* Pods-RebbleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RebbleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8BA3744D4E31211A7034CE555FBB02B9 /* BulletinBoard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BulletinBoard-dummy.m"; sourceTree = "<group>"; };
+		8ED97B37731E19203EBFDCC6AA2D48C7 /* ConnectionResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionResult.swift; path = Bluejay/Bluejay/ConnectionResult.swift; sourceTree = "<group>"; };
+		921A79FBFEA2AD96C21A4EB13E179107 /* Constant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = Bluejay/Bluejay/Constant.swift; sourceTree = "<group>"; };
+		92885B1914DB641E83AE437F90DF942F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		948A606515338D7CA2A8F4F03994B143 /* ListenCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListenCache.swift; path = Bluejay/Bluejay/ListenCache.swift; sourceTree = "<group>"; };
+		94F6457E5864C3B6C33BB22A9430D3CC /* Pods-Rebble-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Rebble-resources.sh"; sourceTree = "<group>"; };
+		98E8FE84F39C09834259A038745282FF /* Data+Extractable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extractable.swift"; path = "Bluejay/Bluejay/Data+Extractable.swift"; sourceTree = "<group>"; };
+		9EE762953C9D4243B6E7C8C76AAED479 /* ListenCharacteristic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListenCharacteristic.swift; path = Bluejay/Bluejay/ListenCharacteristic.swift; sourceTree = "<group>"; };
+		9FABCEB4600A588F3BD9992DFC7FA2FF /* Pods-RebbleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RebbleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A6786AD5066BC821B3C13A63E78CF169 /* Pods-RebbleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RebbleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A6ECFF8A5CD8BD22FADB576DB030D8FC /* WriteResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WriteResult.swift; path = Bluejay/Bluejay/WriteResult.swift; sourceTree = "<group>"; };
+		A7BE5034C248E18EF4D9F7D2CF39EA17 /* Pods-RebbleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RebbleUITests-dummy.m"; sourceTree = "<group>"; };
+		AA2A9CB1A03DB1255DB152F571E83301 /* Bluejay.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bluejay.xcconfig; sourceTree = "<group>"; };
+		AD753E78A4C2B2D40626B6B9CF21DD32 /* BulletinBoard.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BulletinBoard.xcconfig; sourceTree = "<group>"; };
+		B3618C171E40FBA6AFDF10A3820B9D12 /* Pods_RebbleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RebbleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B42D0EB6511A9E08CCCC430FB69FC1D8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B89230B9D66F6BE64C3C21E1E11AF2CE /* Pods-Rebble-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Rebble-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BDC890548EAB248C16246848A19DA019 /* Pods-Rebble-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rebble-acknowledgements.plist"; sourceTree = "<group>"; };
+		BDD00B824367F5E18218B242B1600B15 /* Pods_RebbleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RebbleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0E72DC2BC64D776B9990394A6FA8D7 /* Queue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = Bluejay/Bluejay/Queue.swift; sourceTree = "<group>"; };
+		C3FDCA87C6A7F1B772E57C60DAE6D679 /* Pods-Rebble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rebble.debug.xcconfig"; sourceTree = "<group>"; };
+		C7E906F566C7DB394365D62EDC6E331B /* CBPeripheral+FindService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CBPeripheral+FindService.swift"; path = "Bluejay/Bluejay/CBPeripheral+FindService.swift"; sourceTree = "<group>"; };
+		C8E4572B4AC1F81967E124695B4FB3DD /* BulletinViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulletinViewController.swift; path = Sources/BulletinViewController.swift; sourceTree = "<group>"; };
+		C952E81C6942897D6470999F63BD6307 /* RunResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RunResult.swift; path = Bluejay/Bluejay/RunResult.swift; sourceTree = "<group>"; };
+		C9F89E1F07D2CB3EBC60E72EC42FE38D /* String+Transferable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Transferable.swift"; path = "Bluejay/Bluejay/String+Transferable.swift"; sourceTree = "<group>"; };
+		CEE6A4A3CC7E3187461B1E8ED05E9BE8 /* Data+Sendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Sendable.swift"; path = "Bluejay/Bluejay/Data+Sendable.swift"; sourceTree = "<group>"; };
+		CF96677CEB40053650D13E0F5B2F30B1 /* Pods-RebbleTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RebbleTests-frameworks.sh"; sourceTree = "<group>"; };
+		D3E0F00CA7EA337E6545D8B2C56F9A61 /* HighlightButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HighlightButton.swift; path = Sources/Support/HighlightButton.swift; sourceTree = "<group>"; };
+		D62CCA1219451D6EA671C402FDEB74CF /* Pods-Rebble-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rebble-dummy.m"; sourceTree = "<group>"; };
+		D923F5C1052B50CA1883CA42419E48AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D978FEEC7FDC27819F4478D9711FD5A5 /* ContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainerView.swift; path = Sources/Support/ContainerView.swift; sourceTree = "<group>"; };
+		DC1682D17AD8CD3F7CA3554EAC91AD0E /* DiscoverCharacteristic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiscoverCharacteristic.swift; path = Bluejay/Bluejay/DiscoverCharacteristic.swift; sourceTree = "<group>"; };
+		DDF96815D8E2E1535F2B9EEA67314CB6 /* WriteCharacteristic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WriteCharacteristic.swift; path = Bluejay/Bluejay/WriteCharacteristic.swift; sourceTree = "<group>"; };
+		DFC1AEA2EC1A1CA7219B0CA3D09CE3DC /* BackgroundRestoreMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundRestoreMode.swift; path = Bluejay/Bluejay/BackgroundRestoreMode.swift; sourceTree = "<group>"; };
+		E25E55E76AEE1A8B3647275874DBCC03 /* Bluejay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Bluejay-dummy.m"; sourceTree = "<group>"; };
+		E2A9EF2EF46B0189D317AA77C69623F3 /* Bluejay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Bluejay.modulemap; sourceTree = "<group>"; };
+		E57D57FF6A368FC7A6EBA2CB85B02AA7 /* Bluejay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bluejay-prefix.pch"; sourceTree = "<group>"; };
+		E838421D0CB4A3E4399DAABF63EFE68D /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Bluejay/Bluejay/Event.swift; sourceTree = "<group>"; };
+		E94601C8B51C99CA60BF1B0B5379E075 /* BulletinInterfaceFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulletinInterfaceFactory.swift; path = Sources/BulletinInterfaceFactory.swift; sourceTree = "<group>"; };
+		EAFD2BEE8E6E634A251DF011AA9B6AB7 /* Pods-Rebble-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Rebble-frameworks.sh"; sourceTree = "<group>"; };
+		ED533E8C0522179D5B49826E78CC0340 /* Pods-RebbleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RebbleTests.release.xcconfig"; sourceTree = "<group>"; };
+		EDDBCB69D58BE268EAE42505B1592DAE /* BulletinBoard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BulletinBoard-umbrella.h"; sourceTree = "<group>"; };
+		EFF10FC9E518A044AC06013763E35FEB /* RSSIObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSIObserver.swift; path = Bluejay/Bluejay/RSSIObserver.swift; sourceTree = "<group>"; };
+		F8126B69C8913ABF1FFD043BA642D838 /* DisconnectionResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DisconnectionResult.swift; path = Bluejay/Bluejay/DisconnectionResult.swift; sourceTree = "<group>"; };
+		FD3947E3B7EC0CD3614C5E29E892F0B6 /* Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operation.swift; path = Bluejay/Bluejay/Operation.swift; sourceTree = "<group>"; };
+		FDD8B8D996DA80B6280687A7B0742A4A /* Pods-RebbleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RebbleTests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A47FE23E7A61293F1AC81BBD422F082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42472554622FB9CB7ED51C90BE1311EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		517B0C1C8EC4D358A1344D0664642398 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E88B715F1098F1709C7D450E5FAA1EF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2DF2EF75FC3C034E2635B0EF25123AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37EFCED807D0C845744FC0FB0F71816F /* Foundation.framework in Frameworks */,
+				8405C749E15A50919205A422473B9BCB /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEBC33B8C22D18B122B995BA916E328E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1836782B2D57DA147E1438A88BF53C6B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CABED7456E7AEDB3D6BE6A0367158054 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08BD1F3F05A2E9349ED0AC46F27E63DE /* Foundation.framework in Frameworks */,
+				8381F760CC9CD02D9759DFB3BAF1D90C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11839A535FB8926D8118A1576BA82C4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE522B7E4DB41636728C806EC7C2EE73 /* Bluejay */,
+				E57AF76026FCB7B02CAC25F16AEC5074 /* BulletinBoard */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CC70DAEB2DC573D6994EDA71F1ECB78 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2887FF4724A664BEFC3A6B7838E473E8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1588AE6CCD9B4B44CA0E1616BA9689F9 /* BulletinBoard.modulemap */,
+				AD753E78A4C2B2D40626B6B9CF21DD32 /* BulletinBoard.xcconfig */,
+				8BA3744D4E31211A7034CE555FBB02B9 /* BulletinBoard-dummy.m */,
+				7EF4EB7292774687C970EF3A98462CFD /* BulletinBoard-prefix.pch */,
+				EDDBCB69D58BE268EAE42505B1592DAE /* BulletinBoard-umbrella.h */,
+				B42D0EB6511A9E08CCCC430FB69FC1D8 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BulletinBoard";
+			sourceTree = "<group>";
+		};
+		52A190667202C9B809EB2330F158C3A7 /* Pods-RebbleTests */ = {
+			isa = PBXGroup;
+			children = (
+				83D63A159B1267C725D2FF05423C9C27 /* Info.plist */,
+				3B503D2947B7F494C19346F268D24788 /* Pods-RebbleTests.modulemap */,
+				4A19338FBDE377B043192865B073EF0F /* Pods-RebbleTests-acknowledgements.markdown */,
+				9FABCEB4600A588F3BD9992DFC7FA2FF /* Pods-RebbleTests-acknowledgements.plist */,
+				FDD8B8D996DA80B6280687A7B0742A4A /* Pods-RebbleTests-dummy.m */,
+				CF96677CEB40053650D13E0F5B2F30B1 /* Pods-RebbleTests-frameworks.sh */,
+				46892EE855D44650065B3ABC49E1F98B /* Pods-RebbleTests-resources.sh */,
+				294BC08D1E4B9986DE8BBFAABE110E49 /* Pods-RebbleTests-umbrella.h */,
+				A6786AD5066BC821B3C13A63E78CF169 /* Pods-RebbleTests.debug.xcconfig */,
+				ED533E8C0522179D5B49826E78CC0340 /* Pods-RebbleTests.release.xcconfig */,
+			);
+			name = "Pods-RebbleTests";
+			path = "Target Support Files/Pods-RebbleTests";
+			sourceTree = "<group>";
+		};
+		5DF2D761B9475B09966581141EAD7546 /* Pods-RebbleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0D8FE6DC63B0989EBB68AF571525AC4E /* Info.plist */,
+				2465EB6C5700C67580AE93032337D8A4 /* Pods-RebbleUITests.modulemap */,
+				4CB72EF6EE4D2E8442FB3559587CFC05 /* Pods-RebbleUITests-acknowledgements.markdown */,
+				59167D29B9E5699E7C3DCA77AD75677E /* Pods-RebbleUITests-acknowledgements.plist */,
+				A7BE5034C248E18EF4D9F7D2CF39EA17 /* Pods-RebbleUITests-dummy.m */,
+				48923C355C958F1A0F4A97359399CBC6 /* Pods-RebbleUITests-frameworks.sh */,
+				78666C0F9F978B705E35F4816719F613 /* Pods-RebbleUITests-resources.sh */,
+				434E77A5757C4E4AC428F5FAE64B1ADA /* Pods-RebbleUITests-umbrella.h */,
+				7E4860F765E45F33991DE9464DEB99BE /* Pods-RebbleUITests.debug.xcconfig */,
+				8AD82DE43E174E61A25433DE3AAC6E8F /* Pods-RebbleUITests.release.xcconfig */,
+			);
+			name = "Pods-RebbleUITests";
+			path = "Target Support Files/Pods-RebbleUITests";
+			sourceTree = "<group>";
+		};
+		6B45AE55F62BDA6575BA72C49D5A0ABC /* Pods-Rebble */ = {
+			isa = PBXGroup;
+			children = (
+				692103FE8C12D40876A16E05322AC1C4 /* Info.plist */,
+				503FC312D5A827288094A29ABAF41236 /* Pods-Rebble.modulemap */,
+				B89230B9D66F6BE64C3C21E1E11AF2CE /* Pods-Rebble-acknowledgements.markdown */,
+				BDC890548EAB248C16246848A19DA019 /* Pods-Rebble-acknowledgements.plist */,
+				D62CCA1219451D6EA671C402FDEB74CF /* Pods-Rebble-dummy.m */,
+				EAFD2BEE8E6E634A251DF011AA9B6AB7 /* Pods-Rebble-frameworks.sh */,
+				94F6457E5864C3B6C33BB22A9430D3CC /* Pods-Rebble-resources.sh */,
+				84543F8D051A1C64471869791CB2AF50 /* Pods-Rebble-umbrella.h */,
+				C3FDCA87C6A7F1B772E57C60DAE6D679 /* Pods-Rebble.debug.xcconfig */,
+				836FC67F422D77AFA9F4E84FD6C3BBF2 /* Pods-Rebble.release.xcconfig */,
+			);
+			name = "Pods-Rebble";
+			path = "Target Support Files/Pods-Rebble";
+			sourceTree = "<group>";
+		};
+		7CC70DAEB2DC573D6994EDA71F1ECB78 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				92885B1914DB641E83AE437F90DF942F /* Foundation.framework */,
+				0CA159B0CC73805F995F435D691595B2 /* SystemConfiguration.framework */,
+				D923F5C1052B50CA1883CA42419E48AC /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				11839A535FB8926D8118A1576BA82C4A /* Pods */,
+				8654D4D40C4EA1B9D83680B10A4BAFC4 /* Products */,
+				9065488CD5D46688C854A287F40086D4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8654D4D40C4EA1B9D83680B10A4BAFC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35F16E84597CB280E1328F048BC51A17 /* Bluejay.framework */,
+				55BC19FF9E4D0DEE0F10509BC87C40B1 /* BulletinBoard.framework */,
+				6FDE972F8B6E06BC4A926298B758212F /* Pods_Rebble.framework */,
+				BDD00B824367F5E18218B242B1600B15 /* Pods_RebbleTests.framework */,
+				B3618C171E40FBA6AFDF10A3820B9D12 /* Pods_RebbleUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9065488CD5D46688C854A287F40086D4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B45AE55F62BDA6575BA72C49D5A0ABC /* Pods-Rebble */,
+				52A190667202C9B809EB2330F158C3A7 /* Pods-RebbleTests */,
+				5DF2D761B9475B09966581141EAD7546 /* Pods-RebbleUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DE522B7E4DB41636728C806EC7C2EE73 /* Bluejay */ = {
+			isa = PBXGroup;
+			children = (
+				DFC1AEA2EC1A1CA7219B0CA3D09CE3DC /* BackgroundRestoreMode.swift */,
+				3203078B3365BBFE82A63A4090370983 /* Bluejay.h */,
+				5E53E3EFD210532D656417EE1892E84C /* Bluejay.swift */,
+				5E4E8503C5A97370E707C882B301456A /* CBManagerState+ReturnString.swift */,
+				C7E906F566C7DB394365D62EDC6E331B /* CBPeripheral+FindService.swift */,
+				580A352DE9F320A03D954D3B21FC23E9 /* CBPeripheralState+ReturnString.swift */,
+				20DCCFAD6ABB65F26E24E486F5656CF6 /* CBService+FindCharacteristic.swift */,
+				0E76C691FA288CF08E04A62BFB942F88 /* CharacteristicIdentifier.swift */,
+				30AFA1C929AD65987B8991F370A35B58 /* Connection.swift */,
+				039A0F5397ED8A3DB808F258D774DDE0 /* ConnectionObserver.swift */,
+				8ED97B37731E19203EBFDCC6AA2D48C7 /* ConnectionResult.swift */,
+				921A79FBFEA2AD96C21A4EB13E179107 /* Constant.swift */,
+				98E8FE84F39C09834259A038745282FF /* Data+Extractable.swift */,
+				CEE6A4A3CC7E3187461B1E8ED05E9BE8 /* Data+Sendable.swift */,
+				4EE643378202E06B3CC5470D3FEB4E37 /* DataPadding.swift */,
+				5D3AD6E790722C725172D017949CA648 /* Disconnection.swift */,
+				F8126B69C8913ABF1FFD043BA642D838 /* DisconnectionResult.swift */,
+				DC1682D17AD8CD3F7CA3554EAC91AD0E /* DiscoverCharacteristic.swift */,
+				1B891E91E64B02379EE420EDA40C0AC6 /* DiscoverService.swift */,
+				16E68BE863C7EC7DE4225B2F96CC9401 /* DiscoveryResult.swift */,
+				596CF2B568F643995940D876DDB42C24 /* Error.swift */,
+				E838421D0CB4A3E4399DAABF63EFE68D /* Event.swift */,
+				72CF298395E4ECB1E7844B72B73CAFC8 /* Integer+Transferable.swift */,
+				7706B62C1424B0AEC2905283F066A371 /* ListenAction.swift */,
+				948A606515338D7CA2A8F4F03994B143 /* ListenCache.swift */,
+				9EE762953C9D4243B6E7C8C76AAED479 /* ListenCharacteristic.swift */,
+				13E4DEA407973ADA8A640A020F07EBCC /* ListenRestorer.swift */,
+				FD3947E3B7EC0CD3614C5E29E892F0B6 /* Operation.swift */,
+				1E4394DF2CB3ABADBFB597D1D8099F0B /* Peripheral.swift */,
+				1C489D3DC0F83E623BF05BB4C55CAFFD /* PeripheralIdentifier.swift */,
+				BF0E72DC2BC64D776B9990394A6FA8D7 /* Queue.swift */,
+				73243E5816BB365E0C7F84F025F69F4B /* Queueable.swift */,
+				6371B826BB801E78C6856DF56721E6B9 /* QueueableState.swift */,
+				6DE092C8944F6AEE2358E2D014890685 /* ReadCharacteristic.swift */,
+				236A8BB3DACCA2828FFFA5D35ABE9770 /* ReadResult.swift */,
+				8511E370664AACF53AA92AF3A0D414A9 /* Receivable.swift */,
+				EFF10FC9E518A044AC06013763E35FEB /* RSSIObserver.swift */,
+				C952E81C6942897D6470999F63BD6307 /* RunResult.swift */,
+				12A1371D9CF5C95B65AB8E63CC5E12E8 /* Scan.swift */,
+				16A1041FFC1180BE123E6FEE3C7C2F20 /* ScanAction.swift */,
+				594A3ED8FA044032A0E59C9F7B74BD1D /* ScanDiscovery.swift */,
+				711C88B017A78FC6CE571F8EA6F04330 /* Sendable.swift */,
+				344425C9036B52975453E6B663E782D8 /* ServiceIdentifier.swift */,
+				C9F89E1F07D2CB3EBC60E72EC42FE38D /* String+Transferable.swift */,
+				38085BDA308819129E815C7276F29027 /* SynchronizedPeripheral.swift */,
+				DDF96815D8E2E1535F2B9EEA67314CB6 /* WriteCharacteristic.swift */,
+				A6ECFF8A5CD8BD22FADB576DB030D8FC /* WriteResult.swift */,
+				FC434649FEF635D152AE03D83E5237E9 /* Support Files */,
+			);
+			path = Bluejay;
+			sourceTree = "<group>";
+		};
+		E57AF76026FCB7B02CAC25F16AEC5074 /* BulletinBoard */ = {
+			isa = PBXGroup;
+			children = (
+				E94601C8B51C99CA60BF1B0B5379E075 /* BulletinInterfaceFactory.swift */,
+				2596AE7ADC87E9C58F46B4E4508211DC /* BulletinItem.swift */,
+				64143F99A3413368EA852A030C021B88 /* BulletinManager.swift */,
+				C8E4572B4AC1F81967E124695B4FB3DD /* BulletinViewController.swift */,
+				D978FEEC7FDC27819F4478D9711FD5A5 /* ContainerView.swift */,
+				42564FAAD490E489C491E9B8417995BB /* DimmingPresentationController.swift */,
+				D3E0F00CA7EA337E6545D8B2C56F9A61 /* HighlightButton.swift */,
+				6A06651D48542F0BC62155EDC210F132 /* PageBulletinItem.swift */,
+				2887FF4724A664BEFC3A6B7838E473E8 /* Support Files */,
+			);
+			path = BulletinBoard;
+			sourceTree = "<group>";
+		};
+		FC434649FEF635D152AE03D83E5237E9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2A9EF2EF46B0189D317AA77C69623F3 /* Bluejay.modulemap */,
+				AA2A9CB1A03DB1255DB152F571E83301 /* Bluejay.xcconfig */,
+				E25E55E76AEE1A8B3647275874DBCC03 /* Bluejay-dummy.m */,
+				E57D57FF6A368FC7A6EBA2CB85B02AA7 /* Bluejay-prefix.pch */,
+				37E6D7EDF1E42055F7CF7D1CB0F18D1B /* Bluejay-umbrella.h */,
+				77E27EEF03C00D6BC3B1490D809ACF26 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Bluejay";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0AAAB311FE08BE21463018377D477107 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF89551D6DE2699D2AD359FAF1DD2A5 /* Pods-Rebble-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3050266932D7753B958674A1FAF4D164 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188C92E3C27E49BBA9EC6CAA4CD0E699 /* BulletinBoard-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CC15D28A729B448EF4E3998141E324F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AB4828465C1399CBA169ED53353171D /* Pods-RebbleTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E77E8D59C69A4E61F7DFC30368A5D2FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5AB37DD93F1A0AD5D357BDCCEDAFC08 /* Pods-RebbleUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD72AA5BA9FA92F5207C802DD6B3A2F6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE56D5E09E3B760B7A46A342892476B /* Bluejay-umbrella.h in Headers */,
+				E9801260FF8CD202C9D96FB563154F8E /* Bluejay.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		19787C8321575BC730A8F2665B598A07 /* BulletinBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3F557BDD38821DD5A76C084556785B2 /* Build configuration list for PBXNativeTarget "BulletinBoard" */;
+			buildPhases = (
+				0E783D35C699EAD1D002935751F7DADB /* Sources */,
+				CABED7456E7AEDB3D6BE6A0367158054 /* Frameworks */,
+				3050266932D7753B958674A1FAF4D164 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BulletinBoard;
+			productName = BulletinBoard;
+			productReference = 55BC19FF9E4D0DEE0F10509BC87C40B1 /* BulletinBoard.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7A166532B4E22553FF72BC474E6AF1E9 /* Pods-RebbleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFC6DF8488483CB7A61F8B98B1FDC7C7 /* Build configuration list for PBXNativeTarget "Pods-RebbleUITests" */;
+			buildPhases = (
+				91B60C8CC4EC6EF1D19D1289D8DDA156 /* Sources */,
+				517B0C1C8EC4D358A1344D0664642398 /* Frameworks */,
+				E77E8D59C69A4E61F7DFC30368A5D2FB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RebbleUITests";
+			productName = "Pods-RebbleUITests";
+			productReference = B3618C171E40FBA6AFDF10A3820B9D12 /* Pods_RebbleUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		896D3E183B78561D7AF45DB62AC5B81F /* Pods-Rebble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C407FA75605688A5E5A805495E79D601 /* Build configuration list for PBXNativeTarget "Pods-Rebble" */;
+			buildPhases = (
+				5D4F4CF1259D14F39B798AEB315E8F73 /* Sources */,
+				BEBC33B8C22D18B122B995BA916E328E /* Frameworks */,
+				0AAAB311FE08BE21463018377D477107 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CACC5F6F4ED530D4F6E5131C9137EF1B /* PBXTargetDependency */,
+				E6CBCFD8544867C9B130F3E28CD6F9E9 /* PBXTargetDependency */,
+			);
+			name = "Pods-Rebble";
+			productName = "Pods-Rebble";
+			productReference = 6FDE972F8B6E06BC4A926298B758212F /* Pods_Rebble.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DD3049D43824334B567885A17688AF6B /* Pods-RebbleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE233CCBF9AEEEB8038003ADA2CE2466 /* Build configuration list for PBXNativeTarget "Pods-RebbleTests" */;
+			buildPhases = (
+				292DA298377A09817579AA414D2936C9 /* Sources */,
+				3A47FE23E7A61293F1AC81BBD422F082 /* Frameworks */,
+				6CC15D28A729B448EF4E3998141E324F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RebbleTests";
+			productName = "Pods-RebbleTests";
+			productReference = BDD00B824367F5E18218B242B1600B15 /* Pods_RebbleTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F8840F30F6735800938FA9ADC439E9E0 /* Bluejay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03A8EAFF4BF852CF05746F7FCF033459 /* Build configuration list for PBXNativeTarget "Bluejay" */;
+			buildPhases = (
+				A4B4FEE1BEC8A8667EE6F14215959E88 /* Sources */,
+				A2DF2EF75FC3C034E2635B0EF25123AC /* Frameworks */,
+				FD72AA5BA9FA92F5207C802DD6B3A2F6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bluejay;
+			productName = Bluejay;
+			productReference = 35F16E84597CB280E1328F048BC51A17 /* Bluejay.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 8654D4D40C4EA1B9D83680B10A4BAFC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8840F30F6735800938FA9ADC439E9E0 /* Bluejay */,
+				19787C8321575BC730A8F2665B598A07 /* BulletinBoard */,
+				896D3E183B78561D7AF45DB62AC5B81F /* Pods-Rebble */,
+				DD3049D43824334B567885A17688AF6B /* Pods-RebbleTests */,
+				7A166532B4E22553FF72BC474E6AF1E9 /* Pods-RebbleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E783D35C699EAD1D002935751F7DADB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				173E5A0E06569943EDC9501DE85B9ADC /* BulletinBoard-dummy.m in Sources */,
+				7444EB0EAD9F90B7D1C598187DB8FF88 /* BulletinInterfaceFactory.swift in Sources */,
+				A0B02726F0E31986D88EB899B170F1EB /* BulletinItem.swift in Sources */,
+				0D916333EA308F4075A94DE801AE20E4 /* BulletinManager.swift in Sources */,
+				8D5DA9B1129F96725CD7E96D33811572 /* BulletinViewController.swift in Sources */,
+				FD110683B3A002A84E24782D413E7A78 /* ContainerView.swift in Sources */,
+				4C60A033EFEC16D28BB8E8D5A559A2A1 /* DimmingPresentationController.swift in Sources */,
+				387D266A81CFCFC670E473D7CFD66FD7 /* HighlightButton.swift in Sources */,
+				5ACFE53A23E555D9EE91B657FCA39582 /* PageBulletinItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292DA298377A09817579AA414D2936C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EC192A85AB519466B425C0E1244F67B /* Pods-RebbleTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D4F4CF1259D14F39B798AEB315E8F73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E377E9B31975DCD4B5523EC16E75C38E /* Pods-Rebble-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91B60C8CC4EC6EF1D19D1289D8DDA156 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4B5654A2D279E6551C5E0F0983447F8 /* Pods-RebbleUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4B4FEE1BEC8A8667EE6F14215959E88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE592764B14BEFAD679CDC347EFABCD /* BackgroundRestoreMode.swift in Sources */,
+				85EE9AD9FA25259A9AD90EE435DFA3FF /* Bluejay-dummy.m in Sources */,
+				B1AA9D880E87DC12A9A2C605F5B3806F /* Bluejay.swift in Sources */,
+				20E498AF5569E632AB9F676381EC3EB0 /* CBManagerState+ReturnString.swift in Sources */,
+				98E55CD22F342C16491201AF2790D31A /* CBPeripheral+FindService.swift in Sources */,
+				243E789FBAA67080C1F961FC730581D5 /* CBPeripheralState+ReturnString.swift in Sources */,
+				5D3196BCCB6BFAF5B2EB55F3A1A0EED7 /* CBService+FindCharacteristic.swift in Sources */,
+				3FEA8C4F88DB26A19E7E890C598A7BA7 /* CharacteristicIdentifier.swift in Sources */,
+				E167049E337E4009069D21762D51EE47 /* Connection.swift in Sources */,
+				864FDE13D49F00D2717CAF31946282A3 /* ConnectionObserver.swift in Sources */,
+				0FC735B80D9218D3E289D59129F5AEBF /* ConnectionResult.swift in Sources */,
+				A8C11A91FCC2580BAC53D68CDA31CFAC /* Constant.swift in Sources */,
+				A85E00B073B353EB54905E45E83221AE /* Data+Extractable.swift in Sources */,
+				9F45138DC7BB97316B8C6047C220D46F /* Data+Sendable.swift in Sources */,
+				9A59B8AF14C182700BFBEDBEACF2FE26 /* DataPadding.swift in Sources */,
+				AAA2AD523060056297620597F6D19A01 /* Disconnection.swift in Sources */,
+				22C9391BF14220C43CF79C515CB798EF /* DisconnectionResult.swift in Sources */,
+				8DBEB862219BD9902DB05B3563C777E1 /* DiscoverCharacteristic.swift in Sources */,
+				D0ED0916FC17DDA65849964886FE7109 /* DiscoverService.swift in Sources */,
+				3CF13D6623F49E741506E4D98C4133AD /* DiscoveryResult.swift in Sources */,
+				4AAAC4C06CAABA4F5AB2EE6610AFF16D /* Error.swift in Sources */,
+				0E775F39FA3270D673437CE50F59EDD3 /* Event.swift in Sources */,
+				2ACF3F64E931E18AA87F01E6CBE9E843 /* Integer+Transferable.swift in Sources */,
+				C93CB0868A55B53FBF46E5EA2B2031B5 /* ListenAction.swift in Sources */,
+				F821A9841BC52FB7C20BC76C66357598 /* ListenCache.swift in Sources */,
+				D288FA2704F9F1DBE6FEE5824264BCAA /* ListenCharacteristic.swift in Sources */,
+				8B548DA0991A148F2243254A69BC0D87 /* ListenRestorer.swift in Sources */,
+				DC90B59E31F1C4F02FAD5C1A96A394DB /* Operation.swift in Sources */,
+				A9F8D96F8C8300FDABBA0EED564C915E /* Peripheral.swift in Sources */,
+				F351971A05F4F0F3FB48C782404E895B /* PeripheralIdentifier.swift in Sources */,
+				BB1552888C0571E7746A5FAB24679355 /* Queue.swift in Sources */,
+				3B9F7D0DD226BFCAAD76FF3CB8A5942D /* Queueable.swift in Sources */,
+				AD1D1BB78F9F8817A7C924CA05A83ABF /* QueueableState.swift in Sources */,
+				44122911511E2017C77BC590BCB307A4 /* ReadCharacteristic.swift in Sources */,
+				ECF46F18B138065A3A98CA219637AFE8 /* ReadResult.swift in Sources */,
+				E545186AB5B419636FCC7211CD2CB7FF /* Receivable.swift in Sources */,
+				DEE43FD8268D2A68DAAB127534272384 /* RSSIObserver.swift in Sources */,
+				CEF5323B4E0F5ACF70DEAAD331CC29B8 /* RunResult.swift in Sources */,
+				5324CE83E3B537E3019F9B2B603FED45 /* Scan.swift in Sources */,
+				A14594A71D9EEED075A6C1C4171F401B /* ScanAction.swift in Sources */,
+				C02FAE802561E801A726ABEFF87DB0EC /* ScanDiscovery.swift in Sources */,
+				CFBB1B0DECA56C1A38E06B3B498F6A87 /* Sendable.swift in Sources */,
+				8BB5FF92C3CCF323C8D8DFB8F0670982 /* ServiceIdentifier.swift in Sources */,
+				6E3FE5DB584A5EA0B1C443900DE08E92 /* String+Transferable.swift in Sources */,
+				A24B2656A8A64710765014D07EBC5922 /* SynchronizedPeripheral.swift in Sources */,
+				3FE4957999A9514F40E462217D994526 /* WriteCharacteristic.swift in Sources */,
+				EBDDD36DE6CBA2A8A2BFE7F340D49D3C /* WriteResult.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CACC5F6F4ED530D4F6E5131C9137EF1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Bluejay;
+			target = F8840F30F6735800938FA9ADC439E9E0 /* Bluejay */;
+			targetProxy = 1595BCD4E7D14425759441A52E8CFBD3 /* PBXContainerItemProxy */;
+		};
+		E6CBCFD8544867C9B130F3E28CD6F9E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BulletinBoard;
+			target = 19787C8321575BC730A8F2665B598A07 /* BulletinBoard */;
+			targetProxy = 656204891E382B6DFBA46C49DF23A534 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03B1AB851CECDCCC8A4627487D02402A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA2A9CB1A03DB1255DB152F571E83301 /* Bluejay.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Bluejay/Bluejay-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bluejay/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Bluejay/Bluejay.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Bluejay;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		14792F6A3870F98EEF8D4E17464C8235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD753E78A4C2B2D40626B6B9CF21DD32 /* BulletinBoard.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BulletinBoard/BulletinBoard-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BulletinBoard/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BulletinBoard/BulletinBoard.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BulletinBoard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		15B9063741549091C669427EFA26260F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AD82DE43E174E61A25433DE3AAC6E8F /* Pods-RebbleUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RebbleUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RebbleUITests/Pods-RebbleUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RebbleUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1FA37E16B206C683195D32F80D0413CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED533E8C0522179D5B49826E78CC0340 /* Pods-RebbleTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RebbleTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RebbleTests/Pods-RebbleTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RebbleTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3661EF1549DFA1F4AFF65CA33570939A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3FDCA87C6A7F1B772E57C60DAE6D679 /* Pods-Rebble.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Rebble/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rebble/Pods-Rebble.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Rebble;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		643C76AA582046977B7877822ED7A258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		76E844A7952BCA0D58043ED9C8B17926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6786AD5066BC821B3C13A63E78CF169 /* Pods-RebbleTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RebbleTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RebbleTests/Pods-RebbleTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RebbleTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9098BF4574D10CDB683D53DF788E9E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836FC67F422D77AFA9F4E84FD6C3BBF2 /* Pods-Rebble.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Rebble/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rebble/Pods-Rebble.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Rebble;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AC4310BECF9BAAA25A5D4FEC4A45C677 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA2A9CB1A03DB1255DB152F571E83301 /* Bluejay.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Bluejay/Bluejay-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bluejay/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Bluejay/Bluejay.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Bluejay;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C03B8870130C98D1B02B59D003687524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E44EA1EE290359EA7910906D98CF09E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E4860F765E45F33991DE9464DEB99BE /* Pods-RebbleUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RebbleUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RebbleUITests/Pods-RebbleUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RebbleUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F267317C664CEE4EA817B73F61711231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD753E78A4C2B2D40626B6B9CF21DD32 /* BulletinBoard.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BulletinBoard/BulletinBoard-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BulletinBoard/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BulletinBoard/BulletinBoard.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BulletinBoard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03A8EAFF4BF852CF05746F7FCF033459 /* Build configuration list for PBXNativeTarget "Bluejay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC4310BECF9BAAA25A5D4FEC4A45C677 /* Debug */,
+				03B1AB851CECDCCC8A4627487D02402A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643C76AA582046977B7877822ED7A258 /* Debug */,
+				C03B8870130C98D1B02B59D003687524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFC6DF8488483CB7A61F8B98B1FDC7C7 /* Build configuration list for PBXNativeTarget "Pods-RebbleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E44EA1EE290359EA7910906D98CF09E2 /* Debug */,
+				15B9063741549091C669427EFA26260F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C407FA75605688A5E5A805495E79D601 /* Build configuration list for PBXNativeTarget "Pods-Rebble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3661EF1549DFA1F4AFF65CA33570939A /* Debug */,
+				9098BF4574D10CDB683D53DF788E9E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3F557BDD38821DD5A76C084556785B2 /* Build configuration list for PBXNativeTarget "BulletinBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14792F6A3870F98EEF8D4E17464C8235 /* Debug */,
+				F267317C664CEE4EA817B73F61711231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE233CCBF9AEEEB8038003ADA2CE2466 /* Build configuration list for PBXNativeTarget "Pods-RebbleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76E844A7952BCA0D58043ED9C8B17926 /* Debug */,
+				1FA37E16B206C683195D32F80D0413CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

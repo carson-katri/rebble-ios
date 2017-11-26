@@ -1,0 +1,15 @@
+PODS:
+  - Bluejay (0.2.0)
+  - BulletinBoard (1.0.0)
+
+DEPENDENCIES:
+  - Bluejay (>= 0.1)
+  - BulletinBoard
+
+SPEC CHECKSUMS:
+  Bluejay: 2ddc67792e2885cd44ff3c402b12bce675f6be5f
+  BulletinBoard: df0e14c78ab12573ced4fda559f34ba7dd739058
+
+PODFILE CHECKSUM: b49df78fea8a3827eb941cff585ff03b8f124492
+
+COCOAPODS: 1.2.1
