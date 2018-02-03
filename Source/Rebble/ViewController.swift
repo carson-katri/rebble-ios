@@ -25,8 +25,12 @@ class ViewController: UIViewController {
     }
     
     var paired: Bool = false
+    var setup: Bool = false
     
     var manager: WatchManager!
+    
+    @IBOutlet weak var watchIcon: UIImageView!
+    @IBOutlet weak var batteryLevel: UILabel!
     
     @IBOutlet weak var stepChart: LineChartView!
     @IBOutlet weak var sleepChart: BarChartView!
@@ -36,6 +40,10 @@ class ViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         manager = WatchManager.shared
+        manager.onPaired = { watch in
+            print(watch)
+            self.paired = true
+        }
         
         // Fake step data
         let data = LineChartDataSet(values: [ChartDataEntry(x: 0, y: 0), ChartDataEntry(x: 100, y: 73), ChartDataEntry(x: 200, y: 109), ChartDataEntry(x: 300, y: 322), ChartDataEntry(x: 400, y: 421), ChartDataEntry(x: 700, y: 544), ChartDataEntry(x: 900, y: 620)], label: "Steps")
@@ -46,10 +54,10 @@ class ViewController: UIViewController {
         
         data.drawCirclesEnabled = false
         data.drawFilledEnabled = true
+        data.drawValuesEnabled = false
         
-        data.drawCirclesEnabled = true
-        data.circleHoleColor = #colorLiteral(red: 0.9882352941, green: 0.2784313725, blue: 0.1176470588, alpha: 1)
-        data.setCircleColor(#colorLiteral(red: 0.9882352941, green: 0.2784313725, blue: 0.1176470588, alpha: 1))
+        data.circleHoleColor = #colorLiteral(red: 0.282318294, green: 0.2823728323, blue: 0.282314837, alpha: 1)
+        data.setCircleColor(#colorLiteral(red: 0.282318294, green: 0.2823728323, blue: 0.282314837, alpha: 1))
         data.circleRadius = 4
         
         data.fillColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
@@ -58,7 +66,7 @@ class ViewController: UIViewController {
         stepChart.data = LineChartData(dataSets: [data])
         
         stepChart.xAxis.drawGridLinesEnabled = false
-        stepChart.backgroundColor = #colorLiteral(red: 0.407795608, green: 0.4078705311, blue: 0.4077909291, alpha: 1)
+        stepChart.backgroundColor = #colorLiteral(red: 0.1996459365, green: 0.7111043334, blue: 0.8989264369, alpha: 1)
         stepChart.drawGridBackgroundEnabled = false
         
         stepChart.drawBordersEnabled = false
@@ -81,17 +89,24 @@ class ViewController: UIViewController {
         stepChart.rightAxis.enabled = false
         
         stepChart.xAxis.axisMaximum = 1440
+        
+        let _ = Timer.scheduledTimer(withTimeInterval: 30.0, repeats: true) { _ in
+            self.reloadData()
+        }
+    }
+    
+    @IBAction func pairWatch(_ sender: Any) {
+        // Setup watch:
+        if !paired {
+            newWatch()
+        } else if !setup {
+            setupWatch()
+            setup = true
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        // Setup watch:
-        if !paired {
-            newWatch()
-        } else {
-            setupWatch()
-        }
     }
     
     func newWatch() {
@@ -162,6 +177,15 @@ class ViewController: UIViewController {
         bulletinManager.push(item: alerts)
         
         bulletinManager.presentBulletin(above: self)
+    }
+    
+    func reloadData() {
+        // BATTERY LIFE:
+        manager.get(uuid: "0000180F-0000-1000-8000-00805f9b34fb", char: "00002a19-0000-1000-8000-00805f9b34fb", data: { data in
+            print(data)
+        }) { err in
+            print(err)
+        }
     }
 
     override func didReceiveMemoryWarning() {

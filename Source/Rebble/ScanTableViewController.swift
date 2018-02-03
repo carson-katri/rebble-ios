@@ -1,6 +1,6 @@
 //
 //  ScanTableViewController.swift
-//  Rebble
+//  Shows the different devices available.
 //
 //  Created by Carson Katri on 10/4/17.
 //  Copyright © 2017 Carson Katri. All rights reserved.

@@ -1,6 +1,6 @@
 //
-//  WatchRequest.swift
-//  Rebble
+//  Endpoints.swift
+//  Endpoints used by PebbleProtocol as well as UUIDs for different characteristics.
 //
 //  Created by Carson Katri on 10/4/17.
 //  Copyright © 2017 Carson Katri. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Endpoint: Int {
+enum Endpoint: UInt16 {
     case ENDPOINT_TIME = 11
     case ENDPOINT_FIRMWAREVERSION = 16
     case ENDPOINT_PHONEVERSION = 17
@@ -151,7 +151,7 @@ enum AppMessage: Int {
     case APPLICATIONMESSAGE_NACK = 0x7f
 }
 
-enum DataLog: Int {
+enum DataLog: UInt8 {
     case DATALOG_OPENSESSION = 0x01
     case DATALOG_SENDDATA = 0x02
     case DATALOG_CLOSE = 0x03
@@ -250,4 +250,26 @@ enum Length: Int {
 
 enum DeviceUUID: Int64 {
     case GB_UUID_MASK = 0x4767744272646700
+}
+
+enum WatchCharacteristic: String {
+    case service = "0000fed9-0000-1000-8000-00805f9b34fb"
+    case connectivity = "00000001-328E-0FBB-C642-1AA6699BDADA"
+    case pairingTrigger = "00000002-328E-0FBB-C642-1AA6699BDADA"
+    case mtu = "00000003-328e-0fbb-c642-1aa6699bdada"
+    case connectionParams = "00000005-328E-0FBB-C642-1AA6699BDADA"
+    case configDescriptor = "00002902-0000-1000-8000-00805f9b34fb"
+    
+    case read = "10000002-328E-0FBB-C642-1AA6699BDADA"
+    case write = "10000001-328E-0FBB-C642-1AA6699BDADA"
+}
+
+enum WatchUUID: String {
+    case pebbleHealth = "36d8c6ed-4c83-4fa1-a9e2-8f12dc941f8c"
+    case workout = "fef82c82-7176-4e22-88de-35a3fc18d43f"
+    
+    case weather = "61b22bc8-1e29-460d-a236-3fe409a439ff"
+    case location = "2c7e6a86-51e5-4ddd-b606-db43d1e4ad28"
+    
+    case notifications = "b2cae818-10f8-46df-ad2b-98ad2254a3c1"
 }

@@ -11,6 +11,12 @@
 		9015F525A457D519B3D99904 /* Pods_RebbleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B317FA782521454907662331 /* Pods_RebbleTests.framework */; };
 		92176154366B6EBEA488B1B2 /* Pods_Rebble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7637A5C6FD77DA7592E9F4BD /* Pods_Rebble.framework */; };
 		B50265D91FCB5ECC007C800A /* TesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50265D81FCB5ECC007C800A /* TesterViewController.swift */; };
+		B51B18E21FCCDE9600AE4FC9 /* Pebble.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B18E11FCCDE9600AE4FC9 /* Pebble.swift */; };
+		B51B18E41FCCDFE000AE4FC9 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B18E31FCCDFE000AE4FC9 /* Time.swift */; };
+		B562220F1FD1FF5C00DAF9E9 /* Devices.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B562220E1FD1FF5C00DAF9E9 /* Devices.xcassets */; };
+		B56222111FD2064500DAF9E9 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56222101FD2064500DAF9E9 /* StoreViewController.swift */; };
+		B56222131FD20EB100DAF9E9 /* LECO.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B56222121FD20BD400DAF9E9 /* LECO.ttf */; };
+		B5785B87200AB9CD00228740 /* PebbleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5785B86200AB9CD00228740 /* PebbleProtocol.swift */; };
 		B5B561FF1F857DEE0032129C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B561FE1F857DEE0032129C /* AppDelegate.swift */; };
 		B5B562041F857DEE0032129C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B562021F857DEE0032129C /* Main.storyboard */; };
 		B5B562061F857DEE0032129C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B562051F857DEE0032129C /* Assets.xcassets */; };
@@ -19,11 +25,13 @@
 		B5B5621F1F857DEE0032129C /* RebbleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B5621E1F857DEE0032129C /* RebbleUITests.swift */; };
 		B5B5622D1F8580420032129C /* WatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B5622C1F8580420032129C /* WatchManager.swift */; };
 		B5B562301F8584FE0032129C /* ScanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B5622F1F8584FE0032129C /* ScanTableViewController.swift */; };
-		B5B562321F8592520032129C /* WatchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B562311F8592520032129C /* WatchRequest.swift */; };
-		B5B562361F85A0A70032129C /* WatchUUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B562351F85A0A70032129C /* WatchUUID.swift */; };
-		B5B562381F85A3610032129C /* WatchCharacteristics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B562371F85A3610032129C /* WatchCharacteristics.swift */; };
+		B5B562321F8592520032129C /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B562311F8592520032129C /* Endpoints.swift */; };
 		B5B5623A1F85A5540032129C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B562391F85A5540032129C /* ViewController.swift */; };
 		B5B5623C1F85BF580032129C /* Credits in Resources */ = {isa = PBXBuildFile; fileRef = B5B5623B1F85BF580032129C /* Credits */; };
+		B5F3E5DA2024CB3100D10A05 /* Voice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3E5D92024CB3100D10A05 /* Voice.swift */; };
+		B5F3E5DC2024D86F00D10A05 /* ByteBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3E5DB2024D86F00D10A05 /* ByteBuffer.swift */; };
+		B5F3E5DF2025311A00D10A05 /* Datalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3E5DE2025311A00D10A05 /* Datalog.swift */; };
+		B5F3E5E1202532CF00D10A05 /* AppMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3E5E0202532CF00D10A05 /* AppMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,12 @@
 		AE0F49B0F63EF6AD14E55F3A /* Pods-RebbleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RebbleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RebbleUITests/Pods-RebbleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B317FA782521454907662331 /* Pods_RebbleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RebbleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B50265D81FCB5ECC007C800A /* TesterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterViewController.swift; sourceTree = "<group>"; };
+		B51B18E11FCCDE9600AE4FC9 /* Pebble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pebble.swift; sourceTree = "<group>"; };
+		B51B18E31FCCDFE000AE4FC9 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		B562220E1FD1FF5C00DAF9E9 /* Devices.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Devices.xcassets; sourceTree = "<group>"; };
+		B56222101FD2064500DAF9E9 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		B56222121FD20BD400DAF9E9 /* LECO.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LECO.ttf; sourceTree = "<group>"; };
+		B5785B86200AB9CD00228740 /* PebbleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PebbleProtocol.swift; sourceTree = "<group>"; };
 		B5B561FB1F857DEE0032129C /* Rebble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rebble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B561FE1F857DEE0032129C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5B562031F857DEE0032129C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,11 +79,13 @@
 		B5B562201F857DEE0032129C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5B5622C1F8580420032129C /* WatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchManager.swift; sourceTree = "<group>"; };
 		B5B5622F1F8584FE0032129C /* ScanTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanTableViewController.swift; sourceTree = "<group>"; };
-		B5B562311F8592520032129C /* WatchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchRequest.swift; sourceTree = "<group>"; };
-		B5B562351F85A0A70032129C /* WatchUUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchUUID.swift; sourceTree = "<group>"; };
-		B5B562371F85A3610032129C /* WatchCharacteristics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchCharacteristics.swift; sourceTree = "<group>"; };
+		B5B562311F8592520032129C /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		B5B562391F85A5540032129C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B5B5623B1F85BF580032129C /* Credits */ = {isa = PBXFileReference; lastKnownFileType = text; path = Credits; sourceTree = "<group>"; };
+		B5F3E5D92024CB3100D10A05 /* Voice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice.swift; sourceTree = "<group>"; };
+		B5F3E5DB2024D86F00D10A05 /* ByteBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByteBuffer.swift; sourceTree = "<group>"; };
+		B5F3E5DE2025311A00D10A05 /* Datalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datalog.swift; sourceTree = "<group>"; };
+		B5F3E5E0202532CF00D10A05 /* AppMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMessage.swift; sourceTree = "<group>"; };
 		BB1FAE0BC58764563452B490 /* Pods-RebbleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RebbleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RebbleTests/Pods-RebbleTests.release.xcconfig"; sourceTree = "<group>"; };
 		CC319CA10F6AFF6978CDAA63 /* Pods-Rebble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebble.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rebble/Pods-Rebble.debug.xcconfig"; sourceTree = "<group>"; };
 		D70D77302A22995D7DFEEE52 /* Pods-RebbleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RebbleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RebbleTests/Pods-RebbleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +142,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B51B18E51FCCDFE500AE4FC9 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				B51B18E11FCCDE9600AE4FC9 /* Pebble.swift */,
+				B51B18E31FCCDFE000AE4FC9 /* Time.swift */,
+			);
+			path = Devices;
+			sourceTree = "<group>";
+		};
+		B5785B88200AB9D400228740 /* PebbleProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				B5B562311F8592520032129C /* Endpoints.swift */,
+				B5785B86200AB9CD00228740 /* PebbleProtocol.swift */,
+				B5F3E5D92024CB3100D10A05 /* Voice.swift */,
+				B5F3E5DB2024D86F00D10A05 /* ByteBuffer.swift */,
+			);
+			path = PebbleProtocol;
+			sourceTree = "<group>";
+		};
 		B5B561F21F857DEE0032129C = {
 			isa = PBXGroup;
 			children = (
@@ -151,16 +187,19 @@
 		B5B561FD1F857DEE0032129C /* Rebble */ = {
 			isa = PBXGroup;
 			children = (
-				B5B5622E1F8580450032129C /* Classes */,
+				B5B5622E1F8580450032129C /* Watch */,
 				B5B561FE1F857DEE0032129C /* AppDelegate.swift */,
 				B5B5622F1F8584FE0032129C /* ScanTableViewController.swift */,
 				B5B562391F85A5540032129C /* ViewController.swift */,
 				B50265D81FCB5ECC007C800A /* TesterViewController.swift */,
 				B5B562021F857DEE0032129C /* Main.storyboard */,
 				B5B562051F857DEE0032129C /* Assets.xcassets */,
+				B56222121FD20BD400DAF9E9 /* LECO.ttf */,
+				B562220E1FD1FF5C00DAF9E9 /* Devices.xcassets */,
 				B5B562071F857DEE0032129C /* LaunchScreen.storyboard */,
 				B5B5620A1F857DEE0032129C /* Info.plist */,
 				B5B5623B1F85BF580032129C /* Credits */,
+				B56222101FD2064500DAF9E9 /* StoreViewController.swift */,
 			);
 			path = Rebble;
 			sourceTree = "<group>";
@@ -183,15 +222,24 @@
 			path = RebbleUITests;
 			sourceTree = "<group>";
 		};
-		B5B5622E1F8580450032129C /* Classes */ = {
+		B5B5622E1F8580450032129C /* Watch */ = {
 			isa = PBXGroup;
 			children = (
+				B5F3E5DD202530F600D10A05 /* Connectivity */,
 				B5B5622C1F8580420032129C /* WatchManager.swift */,
-				B5B562311F8592520032129C /* WatchRequest.swift */,
-				B5B562351F85A0A70032129C /* WatchUUID.swift */,
-				B5B562371F85A3610032129C /* WatchCharacteristics.swift */,
+				B51B18E51FCCDFE500AE4FC9 /* Devices */,
+				B5785B88200AB9D400228740 /* PebbleProtocol */,
 			);
-			path = Classes;
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		B5F3E5DD202530F600D10A05 /* Connectivity */ = {
+			isa = PBXGroup;
+			children = (
+				B5F3E5DE2025311A00D10A05 /* Datalog.swift */,
+				B5F3E5E0202532CF00D10A05 /* AppMessage.swift */,
+			);
+			path = Connectivity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +366,8 @@
 				B5B5623C1F85BF580032129C /* Credits in Resources */,
 				B5B562091F857DEE0032129C /* LaunchScreen.storyboard in Resources */,
 				B5B562061F857DEE0032129C /* Assets.xcassets in Resources */,
+				B56222131FD20EB100DAF9E9 /* LECO.ttf in Resources */,
+				B562220F1FD1FF5C00DAF9E9 /* Devices.xcassets in Resources */,
 				B5B562041F857DEE0032129C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,14 +531,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5B562381F85A3610032129C /* WatchCharacteristics.swift in Sources */,
+				B5F3E5DA2024CB3100D10A05 /* Voice.swift in Sources */,
+				B51B18E21FCCDE9600AE4FC9 /* Pebble.swift in Sources */,
+				B56222111FD2064500DAF9E9 /* StoreViewController.swift in Sources */,
+				B5F3E5E1202532CF00D10A05 /* AppMessage.swift in Sources */,
+				B5785B87200AB9CD00228740 /* PebbleProtocol.swift in Sources */,
+				B51B18E41FCCDFE000AE4FC9 /* Time.swift in Sources */,
 				B5B5623A1F85A5540032129C /* ViewController.swift in Sources */,
 				B5B562301F8584FE0032129C /* ScanTableViewController.swift in Sources */,
 				B50265D91FCB5ECC007C800A /* TesterViewController.swift in Sources */,
-				B5B562321F8592520032129C /* WatchRequest.swift in Sources */,
+				B5F3E5DC2024D86F00D10A05 /* ByteBuffer.swift in Sources */,
+				B5F3E5DF2025311A00D10A05 /* Datalog.swift in Sources */,
+				B5B562321F8592520032129C /* Endpoints.swift in Sources */,
 				B5B561FF1F857DEE0032129C /* AppDelegate.swift in Sources */,
 				B5B5622D1F8580420032129C /* WatchManager.swift in Sources */,
-				B5B562361F85A0A70032129C /* WatchUUID.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

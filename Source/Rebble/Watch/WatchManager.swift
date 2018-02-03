@@ -1,27 +1,34 @@
 //
 //  WatchManager.swift
-//  Rebble
+//  Manages the connection to the watch as well as sending/recieving data
 //
 //  Created by Carson Katri on 10/4/17.
 //  Copyright © 2017 Carson Katri. All rights reserved.
 //
 
 import Foundation
+import CoreBluetooth
 import Bluejay
 
 // Manages watch devices
-class WatchManager: ConnectionObserver {
+class WatchManager: NSObject, ConnectionObserver {
+    
+    // LE
     let bluejay = Bluejay()
     
     var peripherals = [ScanDiscovery]()
     
     var onFound: ([ScanDiscovery]) -> () = { _ in }
+    var onPaired: (Peripheral) -> () = { _ in }
     
-    var watches = [Peripheral]()
+    var watch: Peripheral? = nil
+    
+    // CLASSIC
     
     static let shared = WatchManager()
     
-    init() {
+    override init() {
+        super.init()
         bluejay.start(connectionObserver: self)
     }
     
@@ -31,11 +38,33 @@ class WatchManager: ConnectionObserver {
     
     func connected(to peripheral: Peripheral) {
         // Added peripheral
-        watches.append(peripheral)
+        watch = peripheral
+        onPaired(peripheral)
     }
     
     func disconnected(from peripheral: Peripheral) {
         // Disconnected peripheral
+    }
+    
+    func datalog() {
+        /*
+        bluejay.listen(to: CharacteristicIdentifier(uuid: , service: ServiceIdentifier(uuid: )), completion: { [weak self] (result: ReadResult<Int64>) in
+            guard let weakSelf = self else {
+                return
+            }
+            print("DATALOG:")
+            print(result)
+        })
+ 
+        self.get(uuid: WatchCharacteristic.read.rawValue, char: WatchUUID.pebbleHealth.rawValue, data: { data in
+            print("\n\nDATALOG:\n")
+            print(data)
+        }) { err in
+            print(err)
+        }
+        
+        let message = encode(endpoint: Endpoint.ENDPOINT_DATALOG.rawValue, data: DataLog.DATALOG_OPENSESSION.rawValue)
+ */
     }
     
     func scan() {
@@ -75,6 +104,9 @@ class WatchManager: ConnectionObserver {
                     print("Now check if connection was successful")
                     weakSelf.get(uuid: WatchCharacteristic.service.rawValue, char: WatchCharacteristic.connectivity.rawValue, data: { data in
                         print("GOT DATA: \(data)")
+                        let _ = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true, block: { _ in
+                            weakSelf.datalog()
+                        })
                         completion(true)
                     }, failed: { error in
                         print("FAILED: \(error)")
@@ -94,7 +126,7 @@ class WatchManager: ConnectionObserver {
         })
     }
     
-    func send(endpoint: Sendable, data: Sendable) {
+    func encode(endpoint: Sendable, data: Sendable) -> [UInt8] {
         
         /*
          private byte[] encodeSimpleMessage(short endpoint, byte command) {
@@ -112,7 +144,9 @@ class WatchManager: ConnectionObserver {
         let messageLength = Length.LENGTH_PREFIX.rawValue + 1
         let bigEndian = UInt16(messageLength.bigEndian)
         
-        let crc = (Bluejay.combine(sendables: [endpoint, bigEndian, data]) as NSData)
+        let crc = (Bluejay.combine(sendables: [endpoint, bigEndian, data]) as Data)
+        
+        return [UInt8](crc)
     }
     
     func get(uuid: String, char: String, data: @escaping (UInt8) -> (), failed: @escaping (String) -> ()) {
