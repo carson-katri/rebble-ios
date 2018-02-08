@@ -28,6 +28,7 @@
 		B5B562321F8592520032129C /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B562311F8592520032129C /* Endpoints.swift */; };
 		B5B5623A1F85A5540032129C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B562391F85A5540032129C /* ViewController.swift */; };
 		B5B5623C1F85BF580032129C /* Credits in Resources */ = {isa = PBXBuildFile; fileRef = B5B5623B1F85BF580032129C /* Credits */; };
+		B5F368CF202BBA5400B9A8AF /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F368CE202BBA5400B9A8AF /* Server.swift */; };
 		B5F3E5DA2024CB3100D10A05 /* Voice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3E5D92024CB3100D10A05 /* Voice.swift */; };
 		B5F3E5DC2024D86F00D10A05 /* ByteBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3E5DB2024D86F00D10A05 /* ByteBuffer.swift */; };
 		B5F3E5DF2025311A00D10A05 /* Datalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3E5DE2025311A00D10A05 /* Datalog.swift */; };
@@ -82,6 +83,7 @@
 		B5B562311F8592520032129C /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		B5B562391F85A5540032129C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B5B5623B1F85BF580032129C /* Credits */ = {isa = PBXFileReference; lastKnownFileType = text; path = Credits; sourceTree = "<group>"; };
+		B5F368CE202BBA5400B9A8AF /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		B5F3E5D92024CB3100D10A05 /* Voice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice.swift; sourceTree = "<group>"; };
 		B5F3E5DB2024D86F00D10A05 /* ByteBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByteBuffer.swift; sourceTree = "<group>"; };
 		B5F3E5DE2025311A00D10A05 /* Datalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datalog.swift; sourceTree = "<group>"; };
@@ -225,12 +227,21 @@
 		B5B5622E1F8580450032129C /* Watch */ = {
 			isa = PBXGroup;
 			children = (
-				B5F3E5DD202530F600D10A05 /* Connectivity */,
 				B5B5622C1F8580420032129C /* WatchManager.swift */,
+				B5F368CD202BBA3B00B9A8AF /* Bluetooth */,
+				B5F3E5DD202530F600D10A05 /* Connectivity */,
 				B51B18E51FCCDFE500AE4FC9 /* Devices */,
 				B5785B88200AB9D400228740 /* PebbleProtocol */,
 			);
 			path = Watch;
+			sourceTree = "<group>";
+		};
+		B5F368CD202BBA3B00B9A8AF /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				B5F368CE202BBA5400B9A8AF /* Server.swift */,
+			);
+			path = Bluetooth;
 			sourceTree = "<group>";
 		};
 		B5F3E5DD202530F600D10A05 /* Connectivity */ = {
@@ -541,6 +552,7 @@
 				B5B562301F8584FE0032129C /* ScanTableViewController.swift in Sources */,
 				B50265D91FCB5ECC007C800A /* TesterViewController.swift in Sources */,
 				B5F3E5DC2024D86F00D10A05 /* ByteBuffer.swift in Sources */,
+				B5F368CF202BBA5400B9A8AF /* Server.swift in Sources */,
 				B5F3E5DF2025311A00D10A05 /* Datalog.swift in Sources */,
 				B5B562321F8592520032129C /* Endpoints.swift in Sources */,
 				B5B561FF1F857DEE0032129C /* AppDelegate.swift in Sources */,

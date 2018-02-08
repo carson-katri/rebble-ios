@@ -45,7 +45,10 @@ class ViewController: UIViewController {
             self.paired = true
         }
         
-        // Fake step data
+        // Ping the Server so it starts up
+        Server.shared
+        
+        /* Fake step data
         let data = LineChartDataSet(values: [ChartDataEntry(x: 0, y: 0), ChartDataEntry(x: 100, y: 73), ChartDataEntry(x: 200, y: 109), ChartDataEntry(x: 300, y: 322), ChartDataEntry(x: 400, y: 421), ChartDataEntry(x: 700, y: 544), ChartDataEntry(x: 900, y: 620)], label: "Steps")
         data.axisDependency = .left
         
@@ -88,7 +91,7 @@ class ViewController: UIViewController {
         
         stepChart.rightAxis.enabled = false
         
-        stepChart.xAxis.axisMaximum = 1440
+        stepChart.xAxis.axisMaximum = 1440 */
         
         let _ = Timer.scheduledTimer(withTimeInterval: 30.0, repeats: true) { _ in
             self.reloadData()
